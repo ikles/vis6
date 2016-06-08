@@ -1,0 +1,803 @@
+@import _mnu
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-weight: inherit
+  font-style: inherit
+  font-size: 100%
+  font-family: inherit
+  vertical-align: baseline
+
+\:focus
+  outline: 0
+
+body
+  line-height: 1
+  color: black
+  background: white
+
+ol, ul
+  list-style: none
+
+table
+  border-collapse: separate
+  border-spacing: 0
+
+caption, th, td
+  text-align: left
+  font-weight: normal
+
+blockquote
+  &:before, &:after
+    content: ""
+
+q
+  &:before, &:after
+    content: ""
+
+blockquote, q
+  quotes: "" ""
+
+li 
+	list-style: none
+
+ul 
+	padding: 0
+	margin: 0
+
+@import _fonts
+
+.wrapper 
+	width: 100%
+	margin: auto
+	overflow: hidden
+	background-color: #DAE3E6 
+
+.w_1200
+	max-width: 1200px
+	width: 100%
+	margin: auto
+	//overflow: hidden
+	box-sizing: border-box
+
+b, strong 
+	font-family: MuseoSansCyrl700
+
+.top
+	background-color: #f5f5f5 
+	position: relative
+
+.top, .top .w_1200 
+	height: 107px
+
+.top .w_1200 
+	position: relative
+
+.logo 
+	display: block
+	position: absolute
+	left: 15px
+	top: 0
+	z-index: 100
+
+.col-mnu  
+	margin-top: 12px
+	box-sizing: border-box
+
+.top_mnu
+	float: left
+	position: relative
+	z-index: 1
+	ul
+		display: block
+		text-align: center 
+		margin: 0
+	li 
+		display: inline-block
+		list-style: none
+		line-height: 1
+		margin: 0 25px
+		&:first-child 
+			margin-left: 20px
+		&:last-child 
+			margin-right: 20px
+				
+	a 		
+		color: rgb(55, 55, 55)
+		display: block
+		font-family: MuseoSansCyrl700
+		font-size: 14px
+		padding: 13px 0
+		line-height: 1
+		box-sizing: border-box
+		&:hover
+			text-decoration: none
+			color: rgb(255, 102, 0) 
+			
+.active a 
+	text-decoration: none
+	color: rgb(255, 102, 0) 
+
+.top_contacts 
+	color: #000 
+	margin-top: 25px
+
+.top_phone
+	color: #000
+	font-family: MuseoSansCyrl700
+	font-size: 18px
+	text-transform: uppercase
+	background: url("../img/top_icon_phone.png") no-repeat left center
+	padding-left: 22px
+	float: left
+	margin-right: 75px
+	
+.top_mail
+	box-sizing: border-box
+	float: left
+	margin-right: 75px
+	a
+		color: #000
+		font-family: MuseoSansCyrl700
+		font-size: 14px
+		text-decoration: underline
+		float: left
+		background: url("../img/top_icon_mail.png") no-repeat left center
+		padding-left: 22px
+		
+.top_adress 
+	float: left
+	background: url("../img/top_icon_adress.png") no-repeat left center
+	padding-left: 22px
+	font-family: MuseoSansCyrl500
+	font-size: 12px
+	font-weight: 500 
+	line-height: 1.3
+	min-height: 16px
+
+.nopadding 
+	padding: 0 !important
+	
+.nopadding-l 
+	padding-left: 0 !important
+
+.nopadding-r
+	padding-right: 0 !important
+
+.slider_wrap 
+	width: 100%
+	margin: auto
+	overflow: hidden
+	position: relative
+	background-color: #36A6CF 
+	padding-top: 5px
+	.like_h2 
+		color: white
+		font-family: MuseoSansCyrl900
+		font-size: 24px
+		margin-bottom: 12px
+		margin-top: 0
+
+.slider 
+	max-width: 1170px
+	margin: auto
+	min-height: 265px
+
+	.slide 
+		min-height: 265px
+	
+
+.slider_ul 
+	z-index: 10
+
+.slider_text
+	position: absolute
+	top: 35px
+	left: 70px
+	li
+		color: white
+		font-family: MuseoSansCyrl300
+		font-size: 16px
+		margin-bottom: 0px
+		line-height: 1
+		&:before 
+			content: "— " 
+			color: white
+			font-family: MuseoSansCyrl700
+			font-size: 25px
+			margin-right: 10px
+
+.order
+	height: 40px
+	box-sizing: border-box
+	background-color: rgb(255, 240, 0)
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%)
+	border-radius: 4px
+	box-shadow: 0 0 10px rgba(242, 148, 0, 0.75)
+	display: block
+	position: absolute
+	left: 70px
+	bottom: 30px
+	color: black
+	font-family: MuseoSansCyrl300
+	font-size: 16px
+	text-align: center
+	text-decoration: none
+	padding: 12px 20px
+	&:hover 
+		text-decoration: none
+		color: #000 
+	&:focus
+		text-decoration: none
+		color: #000 
+
+/**************************************************/
+.slider
+  position: relative
+  width: 100%
+  overflow: hidden
+  
+.top_slider_wrap
+	margin-bottom: 30px
+
+.slides
+  height: 100% 
+  overflow: hidden
+  transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1)
+
+.slide
+  height: 100%
+  float: left
+  clear: none
+  position: relative
+
+.box 
+	position: relative
+	font-size: 0	
+
+.slider-arrow
+  position: absolute
+  display: block
+  margin-bottom: -20px
+  padding: 20px
+  background-color: #000
+  opacity: 0.3
+  text-decoration: none
+  color: #FFF
+  font-family: Verdana
+  border-radius: 3px
+  &:hover
+    opacity: 0.5
+
+.slider-arrow--right
+  bottom: 50%
+  right: 0
+
+.slider-arrow--left
+  bottom: 50%
+  left: 0
+
+.slider-nav
+  position: absolute
+  bottom: 15px
+  z-index: 100 
+
+.slider-nav__item
+  width: 7px
+  height: 7px
+  float: left
+  clear: none
+  display: block
+  margin: 0 1.5px
+  background: #a6f1ff
+  border-radius: 50px
+  &:focus 
+  	outline: none 		
+  
+
+.slider-nav__item--current
+  background-color: #fff
+
+.slider-arrow
+	height: 44px
+	width: 22px
+	background-color: transparent 
+	line-height: 1
+	opacity: 1
+	bottom: 115px
+
+.slider-arrow.slider-arrow--right
+	background: url("../img/arr_r.png") no-repeat 0 0
+	right: 0
+.slider-arrow.slider-arrow--left 
+	background: url("../img/arr_l.png") no-repeat 0 0
+	left: 0
+
+
+/**************************************************/
+.col-left-top-mnu 
+	overflow: hidden
+
+.left_top_mnu_wrap 
+	width: 100%
+	background: transparent url("../img/bg_mnu.jpg") no-repeat top center
+	background-size: cover
+	overflow: hidden
+	min-height: 163px
+	padding-top: 15px
+
+.left_mnu._top 
+	overflow: hidden
+	width: 100%
+	margin-bottom: 0
+	padding-bottom: 0
+
+.left_mnu 
+	margin-bottom: 20px
+	box-sizing: border-box
+	padding: 0
+	.like_h2
+		font-family: MuseoSansCyrl900
+		color: white
+		padding: 20px
+		font-size: 18px
+	li
+		float: left
+		width: 230px
+		padding-right: 50px
+		display: block
+		line-height: 1.2
+		box-sizing: border-box
+		padding-left: 10px
+		background: url("../img/arr_li.png") no-repeat left 0 top 6px
+		margin-bottom: 15px
+		&:nth-child(3n) 
+			padding-right: 0
+		
+	a 
+		color: white
+		font-family: MuseoSansCyrl500
+		font-size: 15px
+		line-height: 30px
+		box-sizing: border-box
+		line-height: 1
+	
+		&:hover 
+			text-decoration: underline 
+
+.main_content 
+	padding-bottom: 30px
+	overflow: hidden
+	padding-top: 40px
+		
+.content 
+	float: right
+	width: 870px
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl300
+	font-size: 15px
+	line-height: 21px
+	p 
+		margin-bottom: 20px
+		&:last-child 
+			margin-bottom: 0
+
+.banner 
+	margin-bottom: 25px	
+	
+h1 
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl700
+	font-size: 36px
+	margin-bottom: 20px
+	line-height: 1
+	display: block
+	height: 100px
+	background: url("../img/glass_1.png") no-repeat left top
+	padding: 20px 0 0 20px 
+.content
+	h2
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl700
+		font-size: 30px
+		margin-bottom: 20px
+		display: block
+		min-height: 83px
+		padding: 15px 0 0 20px
+		background: url("../img/glass_2.png") no-repeat left top
+	h3
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl700
+		font-size: 24px
+		margin-bottom: 20px
+		display: block
+		min-height: 59px
+		padding: 10px 0 0 20px
+		background: url("../img/glass_3.png") no-repeat left top
+
+.orange_left 
+	border-left: 4px solid rgb(255, 102, 0)
+
+.img_block_text 
+	padding: 20px
+	float: left
+	box-sizing: border-box
+	width: 600px
+
+.floatleft 
+	float: left
+	margin: 0 30px 15px 0 
+
+.floatright 
+	float: right
+	margin: 0 0 15px 30px
+
+.price_table
+	width: 100%
+	margin-top: 20px
+	margin-bottom: 20px
+	td 
+		padding: 10px 15px
+		box-sizing: border-box
+		vertical-align: middle
+		border-bottom: 1px solid #BDBDBD 
+
+	tr 
+		&:first-child 
+			color: #fff
+			font-family: MuseoSansCyrl900
+			font-size: 15px
+			td 
+				background-color: #6b6b6b
+				padding: 15px
+		&:nth-child(2n) 
+			
+		&:nth-child(2n+1) 	
+
+	td 
+		padding: 10px 15px
+		font-size: 15px
+		line-height: 1
+		font-family: MuseoSansCyrl500
+		&:first-child 
+			
+	tbody 
+		tr 
+			color: rgb(47, 47, 47)
+			font-family: MuseoSansCyrl500
+			font-size: 15px
+		td 
+			&:nth-child(2n-1) 
+				width: 50%
+			&:nth-child(2n) 
+				width: 30%
+
+.price_table.inner_table
+	tr
+		&:first-child 
+			td 
+				color: #FFF 
+	td
+		&:nth-child(2n) 
+			color: rgb(132, 132, 132) 
+		&:nth-child(3n) 
+			color: rgb(255, 102, 0)
+		
+		
+			
+.last_news
+	margin-top: 45px
+	.like_h3 
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl900
+		font-size: 18px
+		margin-bottom: 30px
+	ul 	 	
+	
+	a
+		display: block
+		float: left
+		margin-bottom: 25px
+		color: black
+		font-family: MuseoSansCyrl300
+		font-size: 15px
+		text-decoration: underline
+		&:hover 
+			text-decoration: none
+				
+	.all_lnews_link 
+		display: block
+		text-align: left
+		color: rgb(54, 166, 207)
+		font-family: MuseoSansCyrl700
+		font-size: 15px
+		text-decoration: underline
+		&:hover 
+			text-decoration: none
+	
+.left_form
+	width: 230px
+	background-color: #fff
+	box-sizing: border-box
+	padding: 20px 10px 10px
+	position: relative
+	.like_h3 
+		color: #000
+		font-family: MuseoSansCyrl700
+		font-size: 24px
+		margin-bottom: 20px
+		text-align: center
+		
+	input 
+		box-sizing: border-box
+		height: 39px
+		width: 100%
+		background-color: white
+		border: none
+		padding: 0 10px
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl300
+		font-size: 15px
+		margin-bottom: 10px
+		border: 3px solid rgb(218, 227, 230)
+	
+	textarea 
+		box-sizing: border-box
+		width: 100%
+		height: 89px
+		background-color: white
+		border: none
+		padding: 10px
+		color: rgb(47, 47, 47)
+		font-family: MuseoSansCyrl300
+		font-size: 15px
+		margin-bottom: 10px
+		border: 3px solid rgb(218, 227, 230)
+	
+	button 
+		width: 100%
+		height: 39px
+		background-color: rgb(255, 102, 0)
+		border: none
+		text-align: center
+		box-sizing: border-box
+		color: #fff
+		font-family: MuseoSansCyrl700
+		font-size: 15px
+		line-height: 18px
+		text-transform: uppercase
+		
+.left_widget_vk 
+	width: 230px
+	text-align: center
+	margin-top: 30px
+	margin-bottom: 20px
+
+.left_news 
+	.like_h3
+		font-style: 18px
+		font-family: MuseoSansCyrl900
+		margin-bottom: 20px
+	li 
+		margin-bottom: 25px
+	
+	a 
+		font-size: 15px
+		font-family: MuseoSansCyrl300
+		text-decoration: underline
+		color: #000 
+		&:hover 
+			text-decoration: none		
+
+	.all_articles 
+		display: block
+		width: 121px
+		box-sizing: border-box
+		height: 40px
+		background-color: rgb(255, 102, 0)
+		padding: 15px 24px
+		font-family: MuseoSansCyrl700
+		font-size: 12px
+		text-transform: uppercase
+		color: #FFF 
+		text-decoration: none
+		text-align: center
+		float: left
+
+.footer 
+	background-color: #fff
+	color: #000
+	overflow: hidden
+	border-top: 1px solid #F60 
+	padding-bottom: 8px
+
+.copy
+	
+.footer_adress
+	font-family: MuseoSansCyrl500
+	font-size: 12px
+	padding-left: 20px
+	background: url("../img/top_icon_adress.png") no-repeat left center
+	min-height: 16px
+	line-height: 1.2
+	overflow: hidden
+	margin-top: 30px
+
+.footer_phone 
+	font-family: MuseoSansCyrl700
+	font-size: 18px
+	padding-left: 20px
+	background: url("../img/top_icon_phone.png") no-repeat left center
+	margin-top: 30px
+	span
+		font-size: 12px
+		font-family: MuseoSansCyrl500
+
+.footer_mail
+	margin-top: 30px
+	a
+		color: #000
+		font-family: MuseoSansCyrl700
+		font-size: 14px
+		text-decoration: underline
+		padding-left: 20px
+		background: url("../img/top_icon_mail.png") no-repeat left center
+		
+.content
+	.bread 
+		width: 100%
+		padding: 0
+		box-sizing: border-box
+		margin-bottom: 12px
+		overflow: hidden
+		padding-bottom: 3px
+		li 
+			float: left
+			font-size: 12px
+			font-family: MuseoSansCyrl500
+			margin-bottom: 10px
+			margin: 0
+			padding: 0
+			line-height: 1
+			background: none
+			&:before 
+				content: "" 
+			
+			a
+				font-size: 12px
+				color: black
+				text-decoration: underline
+				&:hover 
+					text-decoration: none
+				
+				&:after 
+					line-height: 0.8
+					font-size: 12px
+					font-family: MuseoSansCyrl500
+					content: ">"
+					color: #000 
+					float: right
+					margin-right: 10px
+					margin-left: 10px
+					display: inline
+			span
+				color: rgb(255, 102, 0)
+
+.content 
+	li 
+		margin-bottom: 13px
+		min-height: 20px
+	ul 
+		li 
+			padding-left: 35px
+			background: url("../img/def.png") no-repeat left top 		
+	ol 
+		list-style-type: none
+		counter-reset: num
+		li
+			&:before 
+				content: counter(num) ' '
+				counter-increment: num
+				color: rgb(255, 102, 0)
+				font-family: MuseoSansCyrl900
+				font-size: 16px							
+				text-align: center
+				display: block
+				float: left
+				line-height: 1.7
+				margin-right: 10px
+ 
+.lists 
+	margin-bottom: 40px
+	overflow: hidden
+
+.br5 
+	border-right: 5px
+
+.imgs 
+	margin-bottom: 50px
+	overflow: hidden
+
+blockquote
+	background-color: #fff
+	color: #000
+	font-family: MuseoSansCyrl300
+	font-size: 15px
+	line-height: 21px
+	padding: 25px 60px
+	box-sizing: border-box
+	width: 100%
+	position: relative
+	&:before
+    position: absolute
+    top: 0
+    left: 0
+    line-height: 1
+    background-image: url("../img/left_quote.png") 
+	b 
+		color: #fff
+		font-family: MuseoSansCyrl500
+		font-size: 15px
+		background-color: #F60 
+		padding: 5px 5px 5px 30px
+		position: absolute
+		left: 0
+		bottom: 0
+	&:after
+  	position: absolute
+  	bottom: 0
+  	right: 0
+  	background-image: url("../img/right_quote.png") 
+	p
+	&:before, &:after
+		width: 37px
+		height: 38px
+		display: block
+		background-repeat: no-repeat
+		background-position: 0 0 
+
+.m0 
+	margin: 0 !important
+
+.ml0 
+	margin-left: 0 !important
+	
+.mb0 
+	margin-bottom: 0 !important
+
+.tags 
+	height: 50px
+	overflow: hidden
+	padding-top: 23px
+	border-top: 1px solid #e0e0e0
+	box-sizing: border-box 
+	a
+		color: rgb(54, 166, 207)
+		font-family: MuseoSansCyrl700
+		font-size: 14px
+		text-decoration: underline
+		margin-right: 30px
+		display: inline-block
+		&:hover 
+			text-decoration: none
+	.all_tags, .hide_tags 
+		color: black
+	
+.hide_tags 
+	display: none
+
+.clear 
+	clear: both
+
+.right 
+	float: right !important
+
+.left 
+	float: left !important
+
+
+
+@import _media
