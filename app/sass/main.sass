@@ -405,6 +405,7 @@ b, strong
 	line-height: 21px
 	p 
 		margin-bottom: 20px
+		overflow: hidden
 		&:last-child 
 			margin-bottom: 0
 
@@ -412,19 +413,19 @@ b, strong
 	margin-bottom: 25px	
 	
 h1 
-	color: rgb(47, 47, 47)
+	color: #2f2f2f
 	font-family: Roboto
 	font-size: 36px
 	margin-bottom: 20px
 	line-height: 1
 .content
 	h2
-		color: rgb(47, 47, 47)
+		color: #2f2f2f
 		font-family: Roboto
 		font-size: 30px
 		margin-bottom: 20px
 	h3
-		color: rgb(47, 47, 47)
+		color: #2f2f2f
 		font-family: Roboto
 		font-size: 24px
 		margin-bottom: 20px
@@ -440,11 +441,11 @@ h1
 
 .floatleft 
 	float: left
-	margin: 0 30px 15px 0 
+	margin: 0 15px 15px 0 
 
 .floatright 
 	float: right
-	margin: 0 0 15px 30px
+	margin: 0 0 15px 15px
 
 .price_table
 	font-family: RobotoB 
@@ -709,44 +710,46 @@ h1
 .content
 	font-family: Roboto
 	font-size: 15px 
-	.bread 
-		width: 100%
+.bread 
+	margin-top: 12px
+	margin-bottom: 25px
+	width: 100%
+	padding: 0
+	box-sizing: border-box
+	margin-bottom: 12px
+	overflow: hidden
+	padding-bottom: 3px
+	li 
+		float: left
+		font-size: 14px
+		font-family: Roboto
+		margin-bottom: 10px
+		margin: 0
 		padding: 0
-		box-sizing: border-box
-		margin-bottom: 12px
-		overflow: hidden
-		padding-bottom: 3px
-		li 
-			float: left
-			font-size: 12px
-			font-family: MuseoSansCyrl500
-			margin-bottom: 10px
-			margin: 0
-			padding: 0
-			line-height: 1
-			background: none
-			&:before 
-				content: "" 
+		line-height: 1
+		background: none
+		&:before 
+			content: "" 
+		
+		a
+			font-size: 14px
+			color: #caedff
+			text-decoration: underline
+			&:hover 
+				text-decoration: none
 			
-			a
+			&:after 
+				line-height: 1
 				font-size: 12px
-				color: black
-				text-decoration: underline
-				&:hover 
-					text-decoration: none
-				
-				&:after 
-					line-height: 0.8
-					font-size: 12px
-					font-family: MuseoSansCyrl500
-					content: ">"
-					color: #000 
-					float: right
-					margin-right: 10px
-					margin-left: 10px
-					display: inline
-			span
-				color: rgb(255, 102, 0)
+				font-family: Roboto
+				content: "/"
+				color: #caedff 
+				float: right
+				margin-right: 10px
+				margin-left: 10px
+				display: inline
+		span
+			color: #fff
 
 .content 
 	li 
@@ -754,26 +757,37 @@ h1
 		min-height: 20px
 	ul 
 		li 
-			padding-left: 35px
-			background: url("../img/def.png") no-repeat left top 		
+			padding-left: 25px
+			background: url("../img/def.png") no-repeat left center 		
 	ol 
 		list-style-type: none
 		counter-reset: num
 		li
+			line-height: 1.7
 			&:before 
 				content: counter(num) ' '
 				counter-increment: num
-				color: rgb(255, 102, 0)
-				font-family: MuseoSansCyrl900
-				font-size: 16px							
+				color: #fff
+				font-family: RobotoBL
+				font-size: 14px							
 				text-align: center
 				display: block
 				float: left
-				line-height: 1.7
+				line-height: 1.8
 				margin-right: 10px
- 
+				width: 25px
+				height: 25px
+				background-color: #f03226
+				border-radius: 5px
+
+.white_content
+	border-radius:  4px
+	background-color: #fff
+	overflow: hidden
+	padding: 20px
+	box-sizing: border-box 
+
 .lists 
-	margin-bottom: 40px
 	overflow: hidden
 
 .br5 
@@ -784,43 +798,23 @@ h1
 	overflow: hidden
 
 blockquote
-	background-color: #fff
-	color: #000
-	font-family: MuseoSansCyrl300
+	background-color: #18487b
+	color: #fff
+	font-family: Roboto
 	font-size: 15px
 	line-height: 21px
-	padding: 25px 60px
+	padding: 25px
 	box-sizing: border-box
 	width: 100%
 	position: relative
-	&:before
-    position: absolute
-    top: 0
-    left: 0
-    line-height: 1
-    background-image: url("../img/left_quote.png") 
+	border-radius:  4px
+	overflow: hidden
 	b 
 		color: #fff
-		font-family: MuseoSansCyrl500
+		font-family: RobotoMI
+		font-weight: normal
 		font-size: 15px
-		background-color: #F60 
-		padding: 5px 5px 5px 30px
-		position: absolute
-		left: 0
-		bottom: 0
-	&:after
-  	position: absolute
-  	bottom: 0
-  	right: 0
-  	background-image: url("../img/right_quote.png") 
-	p
-	&:before, &:after
-		width: 37px
-		height: 38px
-		display: block
-		background-repeat: no-repeat
-		background-position: 0 0 
-
+	
 .m0 
 	margin: 0 !important
 
@@ -829,6 +823,11 @@ blockquote
 	
 .mb0 
 	margin-bottom: 0 !important
+
+.bord4 
+	border-radius:  4px
+	overflow: hidden
+
 
 .tags 
 	height: 50px
