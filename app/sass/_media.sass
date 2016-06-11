@@ -2,6 +2,13 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) 
+	.left_form 
+		margin-bottom: 0
+	
+
+	.left_mnu._top li a:hover
+		background-color: #18487b !important
+		
 	.left_widget_vk
 		width: 100%
 		img 
@@ -13,12 +20,8 @@
 	.logo 
 		position: static
 		font-size: 0
-		img 
-			height: 107px
 		
 	.top_slider_wrap 
-		background-color: #f5f5f5 
-		
 
 	.col-mnu 
 		background: none
@@ -75,15 +78,18 @@
 			border: none
 			padding: 10px
 			text-align: right
+			border-radius: 0
 			&:hover 
-				text-decoration: underline
+				text-decoration: none
+				border-radius: 0
 					
 		a:hover, li.active a 
 			border: none
+			border-radius: 0
 			
 	.top_phone 
 		margin-right: 10px
-		float: right
+		float: left
 		margin-right: 0
 	 
 	.top_mail 
@@ -92,12 +98,12 @@
 		min-height: 18px
 		
 	.top_adress 
-		margin-top: 10px
 		float: right
 		text-align: left
 	
 	.col-mnu 
 		float: right !important
+		margin-top: 10px
 	
 	.col-contacts 
 		float: left !important
@@ -107,9 +113,15 @@
 			
 	.footer_adress, .footer_phone 
 		margin-left: 0
+		float: left
 		
+	.footer_mail 
+		a 
+			float: left	
+
 	.footer_adress 
-		padding-left: 25px
+		padding-left: 0px
+		background: none
 	
 	.top_mnu li:last-child 
 		margin-right: 0
@@ -128,10 +140,18 @@
 		float: none
 		width: auto
 
+	.left_mnu._top 
+		margin-top: 0
+
 	.col-left-top-mnu 
-		padding: 0 15px !important
+		padding: 0 !important
 		overflow: hidden
-	
+		background-color: #18487b
+		padding-top: 0
+		a 
+			border-radius:  0
+			color: #FFF 
+
 	.left_top_mnu_wrap 
 		background-image: none 
 		background-color: rgb(113,113,113) 
@@ -140,7 +160,6 @@
 		min-height: auto
 		padding-top: 0
 		margin-top: 10px
-		margin-bottom: 20px
 	
 	.left_mnu._top 
 		height: auto
@@ -169,6 +188,9 @@
 								
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) 
+	.about 
+		background-size: 100% 	
+
 	.footer_phone 
 		font-size: 14px
 	
@@ -188,6 +210,21 @@
 			margin-bottom: 10px !important
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) 	
+	.footer
+		height: auto
+
+	.top_phone 
+		float: none
+		background: none
+		padding-left: 0
+		margin-bottom: 10px
+
+	.col-top 
+		text-align: center
+
+	.red_line 
+		height: auto
+		
 	.content 
 		img 
 			max-width: 100% 
@@ -197,17 +234,21 @@
 	
 	h1 
 		margin-bottom: 15px
-	.footer_adress, .footer_phone, .footer_mail 
+	.footer_adress, .footer_phone, .footer_mail, .footer_mail a 
 		text-align: center
 		background: none
+		float: none
+		padding-left: 0
 	.footer_adress, .footer_phone 
 		margin-bottom: 10px
+		margin-top: 0
 	.last_news 
 		display: none
 	.footer_mail
-		margin-top: 10px
+		margin-top: 0px
 	.footer_adress 
-		margin-top: 20px
+		margin-top: 15px
+		margin-bottom: 0
 	
 	.col-logo 
 		text-align: center
@@ -219,8 +260,10 @@
 	.top_adress 
 		margin-bottom: 20px
 		padding-left: 0
+		width: 100%
 		background: none
 		text-align: center
+		float: none
 			
 	.logo 
 		width: 100% 
@@ -236,8 +279,6 @@
 		margin-top: 20px
 
 	.top_slider_wrap 
-		overflow: hidden
-		background-color: #f5f5f5
 	
 	.col-mnu 
 		position: absolute
@@ -253,9 +294,35 @@
 			float: none
 			margin-top: 10px
 		
-		.top_mail 
-			padding-top: 10px
+	.top_mail 
+		padding-top: 0px
+		width: 100%
+		float: none
+		background: none
+		padding-left: 0
+		text-align: center
+		margin: 0 0 10px 0
+		a 
+			background: none
+			padding-left: 0
+			text-align: center
+			float: none
+	.top_adress 
+		margin-bottom: 0
 		
+	.top, .top .w_1200 
+		height: auto
+	
+	.col-logo-mnu 
+		//overflow: hidden
+		border-bottom: 1px solid #3a9acd
+		background-color: #18487B 
+		padding-bottom: 12px
+
+	.toggle-mnu 
+		margin-top: 22px
+	
+
 @media only screen and (max-width : 640px) 
 	.slider 
 		img 
@@ -266,7 +333,6 @@
 		margin-top: 0
 		margin-bottom: 10px
 	.logo 
-		margin-bottom: 10px
 		
 	.price_table tbody td:nth-child(2n-1), .price_table tbody td:nth-child(2n) 
 		width: auto
@@ -333,10 +399,6 @@
 		
 		.logo 
 			img 
-				width: 100%
-				height: auto
-			
-		
 		
 
 @media only screen and (max-width : 320px) 
