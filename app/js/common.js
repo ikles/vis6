@@ -1,7 +1,5 @@
 $(function() {
 
-
-
 	$('.slider-arrow').on('click', function() {
 		console.log(glide.current());
 	});

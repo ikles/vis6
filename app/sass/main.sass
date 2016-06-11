@@ -54,7 +54,17 @@ ul
 	width: 100%
 	margin: auto
 	overflow: hidden
-	background-color: #DAE3E6 
+	background: url("../img/bg.png") no-repeat top center
+	background-size:  100%
+
+.red_line 
+	width: 100%
+	overflow: hidden
+	background-color: #F03226 
+	color: #F03226 
+	padding: 11px  0
+	height: 37px
+	box-sizing: border-box
 
 .w_1200
 	max-width: 1200px
@@ -67,80 +77,80 @@ b, strong
 	font-family: MuseoSansCyrl700
 
 .top
-	background-color: #f5f5f5 
 	position: relative
+	border-bottom: 1px solid #3A9ACD 
 
 .top, .top .w_1200 
-	height: 107px
+	height: 103px
 
 .top .w_1200 
 	position: relative
 
 .logo 
+	margin-top: 18px
 	display: block
-	position: absolute
-	left: 15px
-	top: 0
-	z-index: 100
-
+ 			
 .col-mnu  
-	margin-top: 12px
+	margin-top: 17px
 	box-sizing: border-box
 
 .top_mnu
-	float: left
+	float: right
 	position: relative
 	z-index: 1
 	ul
-		display: block
-		text-align: center 
 		margin: 0
 	li 
-		display: inline-block
+		float: left
 		list-style: none
 		line-height: 1
-		margin: 0 25px
+		margin: 0 9px
 		&:first-child 
-			margin-left: 20px
+			margin-left: 0
 		&:last-child 
-			margin-right: 20px
+			margin-right: 0
 				
 	a 		
-		color: rgb(55, 55, 55)
+		color: #fff
 		display: block
-		font-family: MuseoSansCyrl700
-		font-size: 14px
-		padding: 13px 0
+		font-family: RobotoM
+		font-size: 16px
+		padding: 7px 9px
 		line-height: 1
 		box-sizing: border-box
+		text-transform: uppercase
+		text-align: center
 		&:hover
 			text-decoration: none
-			color: rgb(255, 102, 0) 
+			background-color: #f03226
+			border-radius: 4px
+			
 			
 .active a 
 	text-decoration: none
-	color: rgb(255, 102, 0) 
+	background-color: #f03226
+	border-radius: 4px
+	
 
 .top_contacts 
 	color: #000 
 	margin-top: 25px
 
 .top_phone
-	color: #000
+	color: #FFF 
 	font-family: MuseoSansCyrl700
 	font-size: 18px
 	text-transform: uppercase
 	background: url("../img/top_icon_phone.png") no-repeat left center
 	padding-left: 22px
 	float: left
-	margin-right: 75px
 	
 .top_mail
 	box-sizing: border-box
 	float: left
-	margin-right: 75px
+	margin-left: 40px
 	a
-		color: #000
+		color: #FFF 
 		font-family: MuseoSansCyrl700
 		font-size: 14px
 		text-decoration: underline
@@ -149,7 +159,8 @@ b, strong
 		padding-left: 22px
 		
 .top_adress 
-	float: left
+	color: #FFF 
+	float: right
 	background: url("../img/top_icon_adress.png") no-repeat left center
 	padding-left: 22px
 	font-family: MuseoSansCyrl500
@@ -322,16 +333,12 @@ b, strong
 	overflow: hidden
 
 .left_top_mnu_wrap 
-	width: 100%
-	background: transparent url("../img/bg_mnu.jpg") no-repeat top center
-	background-size: cover
-	overflow: hidden
-	min-height: 163px
-	padding-top: 15px
+	width: 100%	
 
 .left_mnu._top 
 	overflow: hidden
 	width: 100%
+	margin-top: 25px
 	margin-bottom: 0
 	padding-bottom: 0
 
@@ -346,32 +353,48 @@ b, strong
 		font-size: 18px
 	li
 		float: left
-		width: 230px
-		padding-right: 50px
-		display: block
-		line-height: 1.2
 		box-sizing: border-box
-		padding-left: 10px
-		background: url("../img/arr_li.png") no-repeat left 0 top 6px
-		margin-bottom: 15px
-		&:nth-child(3n) 
-			padding-right: 0
+		margin-right: 2px
+		margin-bottom: 11px
 		
 	a 
-		color: white
-		font-family: MuseoSansCyrl500
+		color: #caedff
+		font-family: Roboto
 		font-size: 15px
 		line-height: 30px
 		box-sizing: border-box
 		line-height: 1
-	
+		display: block
+		padding: 5px 10px
+		text-decoration: underline
+		border: 1px solid transparent
+		border-radius: 4px
 		&:hover 
-			text-decoration: underline 
+			color: #FFF
+			text-decoration: none
+			border: 1px solid #fff
+	.active 
+		a
+			color: #FFF
+			text-decoration: none
+			border: 1px solid #fff
+			background: none  
 
+.about 
+	border-radius:  4px
+	overflow: hidden
+	padding: 20px
+	box-sizing: border-box
+	background-color: #FFF 
+	margin-bottom: 25px
+	background: url("../img/about_bg.png") no-repeat bottom center
+	min-height: 454px
+	box-sizing: border-box
+		
 .main_content 
 	padding-bottom: 30px
 	overflow: hidden
-	padding-top: 40px
+	padding-top: 10px
 		
 .content 
 	float: right
@@ -390,33 +413,21 @@ b, strong
 	
 h1 
 	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl700
+	font-family: Roboto
 	font-size: 36px
 	margin-bottom: 20px
 	line-height: 1
-	display: block
-	height: 100px
-	background: url("../img/glass_1.png") no-repeat left top
-	padding: 20px 0 0 20px 
 .content
 	h2
 		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl700
+		font-family: Roboto
 		font-size: 30px
 		margin-bottom: 20px
-		display: block
-		min-height: 83px
-		padding: 15px 0 0 20px
-		background: url("../img/glass_2.png") no-repeat left top
 	h3
 		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl700
+		font-family: Roboto
 		font-size: 24px
 		margin-bottom: 20px
-		display: block
-		min-height: 59px
-		padding: 10px 0 0 20px
-		background: url("../img/glass_3.png") no-repeat left top
 
 .orange_left 
 	border-left: 4px solid rgb(255, 102, 0)
@@ -436,33 +447,44 @@ h1
 	margin: 0 0 15px 30px
 
 .price_table
+	font-family: RobotoB 
 	width: 100%
 	margin-top: 20px
 	margin-bottom: 20px
+	border: 2px solid #18487B 
+	border-radius: 4px 
 	td 
 		padding: 10px 15px
 		box-sizing: border-box
 		vertical-align: middle
-		border-bottom: 1px solid #BDBDBD 
+		border-bottom: 1px solid #dddfe0 
 
 	tr 
 		&:first-child 
-			color: #fff
-			font-family: MuseoSansCyrl900
-			font-size: 15px
 			td 
-				background-color: #6b6b6b
+				font-family: RobotoB
+				font-size: 15px
+				background-color: #18487B
 				padding: 15px
-		&:nth-child(2n) 
-			
-		&:nth-child(2n+1) 	
+				color: #fff
+				border-right: none
 
 	td 
 		padding: 10px 15px
 		font-size: 15px
 		line-height: 1
-		font-family: MuseoSansCyrl500
-		&:first-child 
+		font-family: Roboto
+		color: #2f2f2f
+		&:first-child
+			font-family: RobotoB
+			color: #18487b
+			border-right: 1px solid #dddfe0
+		&:nth-child(2n) 
+	  	border-right: 1px solid #dddfe0
+		&:nth-child(3n) 
+			color: #f03226
+			font-family: RobotoB
+		
 			
 	tbody 
 		tr 
@@ -487,75 +509,97 @@ h1
 			color: rgb(255, 102, 0)
 		
 		
-			
-.last_news
-	margin-top: 45px
-	.like_h3 
-		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl900
-		font-size: 18px
-		margin-bottom: 30px
-	ul 	 	
-	
-	a
-		display: block
-		float: left
-		margin-bottom: 25px
-		color: black
-		font-family: MuseoSansCyrl300
-		font-size: 15px
-		text-decoration: underline
-		&:hover 
-			text-decoration: none
-				
-	.all_lnews_link 
-		display: block
-		text-align: left
-		color: rgb(54, 166, 207)
-		font-family: MuseoSansCyrl700
-		font-size: 15px
-		text-decoration: underline
-		&:hover 
-			text-decoration: none
+.content			
+	.last_news
+		color: #000
+		font-family: Roboto  
+		margin-top: 45px
+		.like_h3 
+			color: #000
+			font-family: Roboto
+			font-size: 30px
+			margin-bottom: 30px
+		ul
+			li 
+				padding-left: 0
+				background: none
+				overflow: hidden
+				margin-bottom: 35px
+				font-family: Roboto
+				font-size: 14px
+				&:last-child 
+					margin-bottom: 0
+					 		
+		a
+			color: black
+			font-family: RobotoM
+			font-size: 16px
+			text-decoration: underline
+			margin-bottom: 15px
+			display: block
+			&:hover 
+				text-decoration: none
+		p 
+			line-height: 1.3				
+					
+		.all_lnews_link 
+			display: block
+			text-align: left
+			color: #18487b
+			font-family: RobotoM
+			font-size: 14px
+			text-decoration: underline
+			margin-top: 30px
+			&:hover 
+				text-decoration: none
+
+.img_news 
+	overflow: hidden
+	border-radius:  4px
+	float: left
+	margin-right: 25px
+
 	
 .left_form
-	width: 230px
-	background-color: #fff
+	width: 270px
+	background-color: #f03226
 	box-sizing: border-box
-	padding: 20px 10px 10px
+	padding: 25px 30px 35px 30px
 	position: relative
 	.like_h3 
-		color: #000
-		font-family: MuseoSansCyrl700
+		color: #fff
+		font-family: Roboto
 		font-size: 24px
-		margin-bottom: 20px
+		margin-bottom: 25px
 		text-align: center
 		
 	input 
 		box-sizing: border-box
-		height: 39px
+		height: 45px
 		width: 100%
-		background-color: white
+		background-color: #f03226
 		border: none
-		padding: 0 10px
-		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl300
+		padding: 0 18px
+		color: #fff
+		font-family: Roboto
 		font-size: 15px
-		margin-bottom: 10px
-		border: 3px solid rgb(218, 227, 230)
+		margin-bottom: 14px
+		border: 2px solid #fff
+		border-radius:  4px
 	
 	textarea 
 		box-sizing: border-box
 		width: 100%
-		height: 89px
-		background-color: white
+		height: 105px
+		background-color: #f03226
 		border: none
-		padding: 10px
-		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl300
+		padding: 10px 18px
+		color: #fff
+		font-family: Roboto
 		font-size: 15px
 		margin-bottom: 10px
-		border: 3px solid rgb(218, 227, 230)
+		border: 2px solid #fff
+		border-radius:  4px
 	
 	button 
 		width: 100%
@@ -571,7 +615,7 @@ h1
 		text-transform: uppercase
 		
 .left_widget_vk 
-	width: 230px
+	width: 270px
 	text-align: center
 	margin-top: 30px
 	margin-bottom: 20px
@@ -647,6 +691,8 @@ h1
 		background: url("../img/top_icon_mail.png") no-repeat left center
 		
 .content
+	font-family: Roboto
+	font-size: 15px 
 	.bread 
 		width: 100%
 		padding: 0
@@ -793,10 +839,10 @@ blockquote
 	clear: both
 
 .right 
-	float: right !important
+	//float: right !important
 
 .left 
-	float: left !important
+	//float: left !important
 
 
 
